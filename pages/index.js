@@ -21,7 +21,7 @@ export default function Home({ data, error }) {
       <main className={styles.main}>
         <h1 className={styles.title}>Energy Australia Coding Test</h1>
 
-        <button className={styles.description} onClick={refreshData}>
+        <button className={styles.action} onClick={refreshData}>
           Refresh
         </button>
 
