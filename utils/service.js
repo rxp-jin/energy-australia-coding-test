@@ -17,7 +17,7 @@ export const fetchData = async () => {
     if (error.response.status === 429) {
       return {
         data: cache,
-        error: "Too many request, slow down!",
+        error: "Too many requests, slow down!",
       };
     }
 
