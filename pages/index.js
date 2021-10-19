@@ -1,19 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { convert } from "../utils/convert";
-import axios from "axios";
 import { useRouter } from "next/router";
-
-const BASE_URL = "https://eacp.energyaustralia.com.au/codingtest/api/v1";
-
-const fetchData = async () => {
-  try {
-    const res = await axios.get(`${BASE_URL}/festivals`);
-    return { data: res.data, error: null };
-  } catch (error) {
-    return { data: null, error: error.response.data };
-  }
-};
+import { fetchData } from "../utils/service";
 
 export default function Home({ data, error }) {
   const router = useRouter();
