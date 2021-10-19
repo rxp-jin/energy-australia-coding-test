@@ -2,7 +2,7 @@ import axios from "axios";
 
 const BASE_URL = "https://eacp.energyaustralia.com.au/codingtest/api/v1";
 
-let cache;
+let cache = [];
 
 export const fetchData = async () => {
   try {
